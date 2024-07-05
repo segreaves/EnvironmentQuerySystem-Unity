@@ -26,11 +26,11 @@ namespace EnvironmentQuerySystem
             {
                 for (int row = 0; row < n; row++)
                 {
-                    Vector3 colOffset = (-0.5f * sizeLength + col * delta) * Vector3.right;
-                    Vector3 rowOffset = (-0.5f * sizeLength + row * delta) * Vector3.forward;
+                    float x = -0.5f * sizeLength + col * delta;
+                    float z = -0.5f * sizeLength + row * delta;
                     Vector3 noiseVector = UnityEngine.Random.insideUnitSphere * Mathf.Clamp01(noise);
                     noiseVector.y = 0;
-                    formationPoints.Add(colOffset + rowOffset + noiseVector);
+                    formationPoints.Add(new Vector3(x + noiseVector.x, 0, z + noiseVector.z));
                 }
             }
             return formationPoints;
