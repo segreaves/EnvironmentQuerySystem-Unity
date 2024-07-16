@@ -1088,7 +1088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _debug: 1
-  _formationBuilder: {fileID: 1904661146}
+  _formationBuilder: {fileID: 1904661142}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -1126,9 +1126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rings: 5
-  _pointsPerRing: 5
+  _pointsPerRing: 10
   _innerRing: 2
-  _donutThickness: 3
+  _donutThickness: 4
   _offsetPoints: 1
   _spiral: 1
   _noise: 0
