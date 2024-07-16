@@ -2,6 +2,10 @@
 System for querying and obtaining the highest-utility point in an environment in unity.
 Similar to the Unreal Environment Query System, this system will create a user-selected formation of query points that will perform environment queries in which each query point is evaluated on a series of user-defined query evaluations and the highest utility point is returned.
 
+![image](https://github.com/user-attachments/assets/2492d014-9e6e-4c7d-a1ac-1b04482c486f)
+![image](https://github.com/user-attachments/assets/cd7a43a0-18a4-4651-a8e7-8b4d88e65089)
+
+
 # How to use
 The main tool of the Environment Query System is the Querier class. This class is responsible for performing a raycast from the query point location (with an offset) and either hitting acceptable ground points (Ground Layer) or unaccepable/obstacle points (Reject Layer). It then performs a series of evaluations to select the highest utility query point that hit an acceptable layer.
 There are two examples of queriers in the project:
