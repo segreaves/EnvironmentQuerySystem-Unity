@@ -1088,7 +1088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _debug: 1
-  _formationBuilder: {fileID: 1904661142}
+  _formationBuilder: {fileID: 1904661146}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -1176,8 +1176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53995ca7a4b0e0448838f23c7fb3561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _numberOfPoints: 25
-  _discRadius: 5
+  _numberOfPoints: 200
+  _discRadius: 10
 --- !u!114 &1904661147
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ namespace EnvironmentQuerySystem
 {
     public class FibonacciDisc : FormationBuilder
     {
-        [SerializeField] [Range(3, 50)] private int _numberOfPoints = 10;
+        [SerializeField] [Range(3, 500)] private int _numberOfPoints = 10;
         [SerializeField] private float _discRadius = 10.0f;
 
         public override List<Vector3> BuildFormation()
