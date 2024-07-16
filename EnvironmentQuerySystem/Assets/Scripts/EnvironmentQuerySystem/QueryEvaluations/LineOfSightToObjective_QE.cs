@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 namespace EnvironmentQuerySystem
@@ -20,10 +21,10 @@ namespace EnvironmentQuerySystem
 
         public bool EvaluateLineOfSight(Vector3 start, Vector3 end)
         {
-            Collider[] colliders = Physics.OverlapCapsule(start, end, _sphereCastRadius, _sightBlockLayers);
-            if (colliders.Length == 0) return true;
-            if (colliders.Length == 1) return colliders[0].transform.root == _objective;
-            return false;
+            RaycastHit hitInfo;
+            bool los = !Physics.Raycast(start, end - start, out hitInfo, (end - start).magnitude, _sightBlockLayers);
+            Collider collider = hitInfo.collider;
+            return los ? true : collider.transform.root == _objective;
         }
     }
 }
