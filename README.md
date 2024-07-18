@@ -1,6 +1,9 @@
 # EnvironmentQuerySystem-Unity
 System for querying and obtaining the highest-utility point in an environment.
-Similar to the Unreal Environment Query System, this system will create a user-selected formation of query points that will perform environment queries in which each query point is evaluated on a series of user-defined query evaluations and the highest utility point is returned.
+
+Watch video: https://www.youtube.com/watch?v=rbjJU9OdyH0
+
+Modelled after the Unreal Environment Query System, this system will create a user-selected formation of query points that will perform environment queries in which each query point is evaluated on a series of user-defined query evaluations and the highest utility point is returned.
 
 ![image](https://github.com/user-attachments/assets/2492d014-9e6e-4c7d-a1ac-1b04482c486f)
 ![image](https://github.com/user-attachments/assets/cd7a43a0-18a4-4651-a8e7-8b4d88e65089)
